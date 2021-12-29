@@ -71,17 +71,19 @@ header {
 
 /* MAIN SECTION */
 #main-section {
-    /* display: flex;
-    justify-content: space-between; */
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr); */
     height: 400px;
+    padding-bottom: 30px;
 }
 
 aside {
     width: 30%;
     height: 100%;
-    grid-column: 1/5;
+    /* grid-column: 1/5; */
+    padding-top: 20px;
 }
 
     #three-sentences {
@@ -113,10 +115,8 @@ aside {
 
     #images-section {
         display: flex;
-        /* margin-bottom: 80px; */
-        /* width: 100%; */
         height: 100%;
-        grid-column: 5/13;
+        /* grid-column: 5/13; */
         gap: 2em;
     }
         
@@ -133,75 +133,57 @@ aside {
             flex-grow: 1;
             position: relative;
             cursor: pointer;
-            width: 200px;
-            /* flex: 100%; */
+            width: 170px;
             transition: width 300ms ease;
-            /* margin-left: 20px; */
         }
 
         .card-profile-bkg:hover {
-            flex-grow: 3;
-            width: 100%;
-            /* opacity: 0; */
+            width: 250px;
         }
 
-            /* .profile-desc {
+            .profile-desc {
                 position: absolute;
-            } */
+                color: white;
+            }
 
 
-
-        /* .firstName  */
-        /* .card-profile p:nth-child(1) {
+        .firstName-vertical {
             position: absolute;
-            left: 40px;
-            top: 440px;
+            transform: rotate(-90deg);
+            left: -12px;
+            top: 290px;
             color: white;
-            width: 50%;
-        } */
+            font-size: 20px;
+            transition: opacity 200ms ease;
+        } 
 
-        /* .job-position */
-        /* .card-profile p:nth-child(2) {
+        .firstName-vertical:hover {
+            opacity: 0;
+        }
+
+        .profile-desc-horizontal {
+            transition: opacity 200ms ease;
+            opacity: 0;
+            border: 1px solid blue;
+        }
+
+        .profile-desc-horizontal:hover {
+            opacity: 1;
+        }
+
+        .firstName {
             position: absolute;
-            right: 20px;
-            top: 440px;
+            left: 20px;
+            top: 325px;
             color: white;
-            width: 50%;
-            text-align: right;
-        } */
+        }
 
-        /* .profile-desc {
-            display: flex;
-            justify-content: space-evenly;
-        } */
-        
-        /* .profile-desc:hover {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-        } */
-
-            /* .picture {
-                width: 350px;
-                border-radius: 20px;
-                margin-left: 20px;
-                flex-grow: 1;
-            }
-
-            .picture:hover {
-                flex-grow: 3;
-            }
-
-            .pic1:hover {
-                flex-grow: 3;
-            }
-
-            .pic2:hover {
-                flex-grow: 3;
-            }
-        
-            .pic3:hover {
-                flex-grow: 3;
-            } */
+        .job-position {
+            position: absolute;
+            left: 161px;
+            top: 275px;
+            color: white;
+        }
 
 
 /* SECOND NAV SECTION */
