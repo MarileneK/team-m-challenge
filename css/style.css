@@ -3,7 +3,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    /* height: 100vh; */
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,232,216,1) 100%);
 }
@@ -75,7 +74,7 @@ header {
     justify-content: space-between;
     /* display: grid;
     grid-template-columns: repeat(12, 1fr); */
-    height: 400px;
+    height: 430px;
     padding-bottom: 30px;
 }
 
@@ -137,6 +136,13 @@ aside {
             transition: width 300ms ease;
         }
 
+        .card-profile-bkg::before {
+            content: "";
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(4,4,4,0) 30%);
+            position: absolute;
+            inset: 0;
+        }
+
         .card-profile-bkg:hover {
             width: 250px;
         }
@@ -151,7 +157,7 @@ aside {
             position: absolute;
             transform: rotate(-90deg);
             left: -12px;
-            top: 290px;
+            top: 320px;
             color: white;
             font-size: 20px;
             transition: opacity 200ms ease;
@@ -164,24 +170,24 @@ aside {
         .profile-desc-horizontal {
             transition: opacity 200ms ease;
             opacity: 0;
-            border: 1px solid blue;
         }
 
         .profile-desc-horizontal:hover {
             opacity: 1;
         }
 
-        .firstName {
+        /* .firstName {
             position: absolute;
             left: 20px;
             top: 325px;
             color: white;
-        }
+        } */
 
         .job-position {
+            font-size: 30px;
             position: absolute;
-            left: 161px;
-            top: 275px;
+            left: 55px;
+            top: 298px;
             color: white;
         }
 
